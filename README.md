@@ -5,7 +5,7 @@ A small Python app with pytest tests. We use it to get used to GitHub Codespaces
 ## Start
 
 1. Click **Use this template** -> **Create a new repository**.
-2. Name it `devops-lesson-0-<yourname>` and make it **public**.
+2. Name it `devops-lesson-1-<yourname>` and make it **public**.
 3. Click **Code** -> **Codespaces** -> **Create codespace on main**.
 4. In the terminal, run:
 
