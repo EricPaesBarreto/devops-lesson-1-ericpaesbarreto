@@ -1,0 +1,16 @@
+name: gh_test_python
+
+on [push, pull]
+jobs:
+  gh_test_python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install dependencies
+      - uses: actions/checkout@v6
+        run: python -m pip install -r requirements.txt
+      
+      - name: print python version
+        run: python --version
+
+      - name: 'run tests'
+        run: bash scripts/check-env.sh
