@@ -1,12 +1,16 @@
 name: gh_test_python
 
-on [push, pull]
+on:
+  push:
+
 jobs:
   gh_test_python:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+
       - name: install dependencies
-      - uses: actions/checkout@v6
         run: python -m pip install -r requirements.txt
       
       - name: print python version
