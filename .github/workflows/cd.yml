@@ -1,7 +1,7 @@
 name: gh_test_python
 
 on:
-  push:
+  pull_request:
 
 jobs:
   gh_test_python:
